@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 2 Assignment</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: grey;
+            padding: 15px 0;
+        }
+
+        .links {
+            display: flex;
+            justify-content: center;
+        }
+
+        .links li {
+            margin: 0 15px;
+        }
+
+        .links a {
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease, border-bottom 0.3s ease;
+        }
+
+        nav a:hover {
+            color: red;
+            border-bottom: 2px dashed red;
+        }
+
+        .gallery {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .gallery h2 {
+            margin-bottom: 25px;
+        }
+
+        .gallery-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .gallery-item {
+            width: 200px;
+            border: 2px solid black;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .gallery-item img {
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            border-color: red;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .cta {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .cta-button {
+            padding: 10px 25px;
+            background-color: grey;
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            border-radius: 10px;
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: red;
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 1);
+        }
+
+    </style>
+    
+</head>
+<body>
+    <nav>
+        <ul class="links">
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="resume.html">Work Experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+
+    <section class="gallery">
+
+        <h2>Entertainment Gallery:</h2>
+        <div class="gallery-container">
+
+            <div class="gallery-item">
+                <img src="image1.jpg" alt="Movie Poster 1">
+            </div>
+
+            <div class="gallery-item">
+                <img src="image2.jpg" alt="Album Cover 1">
+            </div>
+
+            <div class="gallery-item">
+                <img src="image3.jpg" alt="Game Screenshot 1">
+            </div>
+
+            <div class="gallery-item">
+                <img src="image4.jpg" alt="Movie Poster 2">
+            </div>
+
+            <div class="gallery-item">
+                <img src="image5.jpg" alt="Album Cover 2">
+            </div>
+
+            <div class="gallery-item">
+                <img src="image6.jpg" alt="Game Screenshot 2">
+            </div>
+            
+        </div>
+
+    </section>
+
+    <section class="cta">
+        <h2>Call-to-Action Buttons</h2>
+        <div class="cta-buttons">
+            <a href="" class="cta-button">Watch Now</a>
+            <a href="" class="cta-button">Listen Here</a>
+            <a href="" class="cta-button">Play Game</a>
+        </div>
+    </section>
+
+</body>
+</html>
